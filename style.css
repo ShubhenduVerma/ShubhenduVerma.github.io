@@ -1,3 +1,42 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(10, 31, 51, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #00b4d8;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00b4d8;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +50,7 @@ body {
 }
 
 .hero {
+    padding-top: 80px;
     position: relative;
     height: 100vh;
     background: url('assets/hero-ship.jpg') center/cover no-repeat;
@@ -161,4 +201,7 @@ footer {
     text-align: center;
     padding: 20px;
     background: #071623;
+}
+html {
+    scroll-behavior: smooth;
 }
