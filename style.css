@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a1f33;
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('assets/hero-ship.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 31, 51, 0.80);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.tagline {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #cfd8dc;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 12px 28px;
+    margin: 10px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-primary {
+    background: #00b4d8;
+    color: #000;
+}
+
+.btn-secondary {
+    border: 2px solid #00b4d8;
+    color: #00b4d8;
+}
+
+.btn-primary:hover {
+    background: #0096c7;
+}
+
+.btn-secondary:hover {
+    background: #00b4d8;
+    color: #000;
+}
+
+.social-icons {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.social-icons a {
+    color: #00b4d8;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffffff;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+    animation: waveMove 6s infinite linear;
+}
+
+.wave path {
+    fill: #0f3057;
+}
+
+@keyframes waveMove {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-40px); }
+}
+
+.section {
+    padding: 80px 10%;
+}
+
+h2 {
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #0f3057;
+    padding: 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #00b4d8;
+    color: #000;
+}
+
+.experience-box {
+    background: #0f3057;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.experience-box ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #071623;
+}
