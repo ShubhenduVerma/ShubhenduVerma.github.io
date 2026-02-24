@@ -132,28 +132,6 @@ body {
     color: #ffffff;
 }
 
-.wave {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.wave svg {
-    display: block;
-    width: 100%;
-    height: 120px;
-    animation: waveMove 6s infinite linear;
-}
-
-.wave path {
-    fill: #0f3057;
-}
-
-@keyframes waveMove {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-40px); }
-}
-
 .section {
     padding: 80px 10%;
 }
